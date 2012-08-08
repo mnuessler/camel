@@ -84,6 +84,21 @@
       <scope>test</scope>
     </dependency>
 
+    <dependency>
+      <groupId>net.sourceforge.saxon</groupId>
+      <artifactId>saxon</artifactId>
+      <version>9.1.0.8</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>net.sourceforge.saxon</groupId>
+      <artifactId>saxon</artifactId>
+      <version>9.1.0.8</version>
+      <classifier>dom</classifier>
+      <scope>test</scope>
+    </dependency>
+
     <!-- logging -->
     <dependency>
       <groupId>org.slf4j</groupId>

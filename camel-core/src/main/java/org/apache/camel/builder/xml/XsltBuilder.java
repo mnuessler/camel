@@ -339,7 +339,10 @@ public class XsltBuilder implements Processor {
      */
     public void setTransformerURL(URL url) throws TransformerConfigurationException, IOException {
         notNull(url, "url");
-        setTransformerInputStream(url.openStream());
+//        Source source = new StreamSource(url.openStream());
+//        source.setSystemId(url.toExternalForm());
+//        setTransformerSource(source);
+        setTransformerFile(new File(url.getFile()));
     }
 
     /**
